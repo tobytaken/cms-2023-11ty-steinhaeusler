@@ -1,0 +1,16 @@
+#workshops {
+ 
+ // allgemeine Style
+}
+
+@include breakpoint(0, $mobile) {
+  #workshops {
+  }
+}
+
+@include breakpoint($desktop) {
+  #workshops {
+  }
+}
+
+

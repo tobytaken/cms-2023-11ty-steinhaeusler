@@ -1,0 +1,174 @@
+@include breakpoint(0, $mobile) {
+  header {
+    background-position: center;
+    background-image: url("../src/images/header-bg.jpg");
+
+    h2 {
+      font-family: $font-family;
+      font-size: 1.6rem;
+      font-weight: 200;
+      padding: 10px 0;
+      color: $orange;
+    }
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5px 10px 0 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: $bggray;
+    z-index: 2;
+
+    &.hidden {
+      #navlist {
+        display: none;
+      }
+
+      button {
+        background-image: url("../src/images/hamburger.svg");
+      }
+      background-color: transparent;
+    }
+
+    #navlist {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      li {
+        text-align: end;
+
+        a {
+          padding: 0;
+          font-weight: 200;
+        }
+      }
+    }
+
+    button {
+      height: 16px;
+      width: 16px;
+      background-color: transparent;
+      background-image: url("../src/images/x.svg");
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .bottom {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+
+    a {
+      font-weight: 400;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border: $orange 1px solid;
+    }
+  }
+}
+
+@include breakpoint($desktop) {
+  header {
+    background-image: url("../src/images/header-black.jpg");
+    height: 750px;
+
+    h2 {
+      font-family: $font-family;
+      font-size: 1.6rem;
+      font-weight: 200;
+      padding: 32px 0;
+      color: $orange;
+    }
+  }
+
+  nav {
+    padding: 0px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 2;
+
+    #navlist {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        text-align: end;
+        border-bottom: solid 1px $lightorange;
+        letter-spacing: 0.02rem;
+
+        a {
+          padding: 0;
+          font-weight: 400;
+          font-size: 0.8rem;
+          color: $lightorange;
+        }
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+
+    a {
+      font-weight: 400;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      margin-top: 10px;
+      border: $orange 1px solid;
+    }
+  }
+}
+
+header {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1;
+  padding: 10px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: $font-family;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+
+    span {
+      font-weight: 200;
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-family;
+  font-size: 1rem;
+  font-weight: bold;
+}

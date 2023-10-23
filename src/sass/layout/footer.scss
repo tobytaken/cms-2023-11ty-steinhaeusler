@@ -1,0 +1,27 @@
+footer {
+  background-color: $bggray;
+  padding: 10px;
+
+  h4 {
+    font-family: $font-family;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+  }
+
+  p {
+    padding-top: 4px;
+    font-family: $font-family;
+    font-size: 0.6rem;
+    font-weight: 200;
+    color: #fff;
+  }
+
+  a {
+    padding: 0;
+    color: $lightorange;
+    font-family: $font-family;
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+}

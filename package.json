@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "npm run sass & npm run esbuild & npm run copy",
+    "sass": "sass --watch --no-source-map ./src/sass/style.scss ./dist/style.css",
+    "esbuild": "esbuild --watch ./src/js/main.js --bundle --outfile=./dist/main.js  --minify",
+    "copy": "cp ./src/index.html ./dist/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.69.2",
+    "browser-sync": "^2.29.3",
+    "esbuild": "^0.19.4"
+  }
+}
