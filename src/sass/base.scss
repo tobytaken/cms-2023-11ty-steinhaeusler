@@ -23,10 +23,6 @@
   visibility: hidden;
 }
 
-// .hidden {
-//   @include hidden;
-// }
-
 @mixin show {
   display: block;
   visibility: visible;
