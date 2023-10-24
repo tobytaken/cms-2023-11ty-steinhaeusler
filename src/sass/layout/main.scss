@@ -1,104 +1,5 @@
 @include breakpoint(0, $mobile) {
   main {
-    #workshops {
-      padding: 30px 0;
-
-      .heading {
-        padding: 10px;
-      }
-
-      .level {
-        position: relative;
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $bggray;
-
-        .img-container-mobile {
-          position: relative;
-          top: -40px;
-          width: 86px;
-          height: 86px;
-          padding: 18px;
-          background-color: $lightgray;
-          border-radius: 100px;
-
-          .number {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 24px;
-            height: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $superlightgray;
-            color: $orange;
-            font-size: 1.1rem;
-            font-weight: 500;
-            border-radius: 100px;
-          }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .text-container {
-          position: relative;
-          top: -20px;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          padding: 0 10px;
-
-          h3 {
-            font-size: 1rem;
-            font-weight: 200;
-            color: $lightorange;
-          }
-
-          p {
-            padding: 6px 0;
-            line-height: 1.3;
-            font-size: 0.7rem;
-            font-weight: 200;
-            color: #fff;
-          }
-
-          a {
-            width: fit-content;
-            font-weight: 400;
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            padding: 6px 16px;
-            border: $orange 1px solid;
-          }
-
-          .quote {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-
-            img {
-              width: 44px;
-              height: 44px;
-            }
-
-            blockquote {
-              font-weight: 200;
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-
     #about {
       background-color: $superlightorange;
       padding: 30px 0;
@@ -191,145 +92,30 @@
 
 @include breakpoint($desktop) {
   main {
-    #workshops {
-      padding: 100px 0 30px 0;
-
-      .heading {
-        padding: 10px;
-      }
-
-      .level {
-        position: relative;
-        width: 70%;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $bggray;
-
-        &:first-child {
-          margin-left: auto;
-          margin-right: 10px;
-
-          .img-container-mobile {
-            .number {
-              top: -60px;
-            }
-          }
-        }
-
-        &:nth-child(2) {
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        &:last-child {
-          margin-left: 120px;
-          margin-right: auto;
-
-          .img-container-mobile {
-            .number {
-              top: 50.5px;
-            }
-          }
-        }
-
-        .img-container-mobile {
-          width: 86px;
-          height: 86px;
-          padding: 18px;
-          background-color: $lightgray;
-          border-radius: 100px;
-
-          .number {
-            position: absolute;
-            top: 0;
-            left: -122px;
-            color: $bggray;
-            font-size: 10rem;
-            font-weight: 500;
-          }
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .text-container {
-          position: relative;
-          top: -20px;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          padding: 0 10px;
-
-          h3 {
-            font-size: 1rem;
-            font-weight: 200;
-            color: $lightorange;
-          }
-
-          p {
-            padding: 6px 0;
-            line-height: 1.3;
-            font-size: 0.7rem;
-            font-weight: 200;
-            color: #fff;
-          }
-
-          a {
-            width: fit-content;
-            font-weight: 400;
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            padding: 6px 16px;
-            border: $orange 1px solid;
-          }
-
-          .quote {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-
-            img {
-              width: 44px;
-              height: 44px;
-            }
-
-            blockquote {
-              font-weight: 200;
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-
     #about {
+      display: flex;
       background-color: $superlightorange;
-      padding: 30px 0;
+      padding: 80px 30px;
       margin-bottom: 30px;
 
       img {
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        aspect-ratio: 1.2;
         object-fit: cover;
+      }
+
+      .text-container {
+        & > p {
+          padding: 5px 10px;
+          font-size: 0.6rem;
+          line-height: 1.5;
+          font-weight: 200;
+          color: $bggray;
+        }
       }
 
       .headings {
         padding: 10px;
-      }
-
-      & > p {
-        padding: 5px 10px;
-        font-size: 0.6rem;
-        line-height: 1.5;
-        font-weight: 200;
-        color: $bggray;
       }
 
       a {
@@ -337,10 +123,10 @@
         margin: 10px 0 0 10px;
         width: fit-content;
         color: #000;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 0.6rem;
         text-transform: uppercase;
-        padding: 6px 16px;
+        padding: 10px 16px;
         border: $lightorange 1px solid;
       }
     }
@@ -357,11 +143,11 @@
         overflow-x: scroll;
 
         article {
-          min-width: 75%;
+          min-width: 30%;
           background-color: $ultralightgray;
 
           h3 {
-            padding: 10px;
+            padding: 0.6rem 0.8rem;
             font-size: 1rem;
             font-weight: 200;
             color: $orange;
@@ -374,7 +160,7 @@
           }
 
           p {
-            padding: 10px;
+            padding: 0.8rem;
             font-size: 0.6rem;
             line-height: 1.5;
             font-weight: 200;
@@ -382,7 +168,7 @@
 
           a {
             display: block;
-            margin: 0 0 10px 10px;
+            margin: 0 0 0.8rem 0.8rem;
             width: fit-content;
             color: #000;
             font-weight: 400;
