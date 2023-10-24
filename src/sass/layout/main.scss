@@ -2,8 +2,8 @@
   main {
     #about {
       background-color: $superlightorange;
-      padding: 30px 0;
-      margin-bottom: 30px;
+      padding: rem($pd-3x) 0;
+      margin-bottom: rem($pd-3x);
 
       img {
         width: 100%;
@@ -12,12 +12,12 @@
       }
 
       .headings {
-        padding: 10px;
+        padding: rem($pd-half);
       }
 
       .text-container {
         & > p {
-          padding: 5px 10px;
+          padding: rem($pd-quarter) rem($pd-half);
           font-size: 0.6rem;
           line-height: 1.5;
           font-weight: 200;
@@ -27,26 +27,26 @@
 
       a {
         display: block;
-        margin: 10px 0 0 10px;
+        margin: rem($pd-half) 0 0 rem($pd-half);
         width: fit-content;
         color: #000;
         font-weight: 400;
         font-size: 0.6rem;
         text-transform: uppercase;
-        padding: 6px 16px;
+        padding: rem($btn-pd-tb) rem($btn-pd-lr);
         border: $lightorange 1px solid;
       }
     }
 
     #news {
       .top {
-        padding: 10px;
+        padding: rem($pd-half);
       }
 
       .carousel {
-        padding: 10px;
+        padding: rem($pd-half);
         display: flex;
-        gap: 10px;
+        gap: rem($pd-half);
         overflow-x: scroll;
 
         article {
@@ -54,7 +54,7 @@
           background-color: $ultralightgray;
 
           h3 {
-            padding: 10px;
+            padding: rem($pd-half);
             font-size: 1rem;
             font-weight: 200;
             color: $orange;
@@ -67,7 +67,7 @@
           }
 
           p {
-            padding: 10px;
+            padding: rem($pd-half);
             font-size: 0.6rem;
             line-height: 1.5;
             font-weight: 200;
@@ -75,13 +75,13 @@
 
           a {
             display: block;
-            margin: 0 0 10px 10px;
+            margin: 0 0 rem($pd-half) rem($pd-half);
             width: fit-content;
             color: #000;
             font-weight: 400;
             font-size: 0.6rem;
             text-transform: uppercase;
-            padding: 6px 16px;
+            padding: rem($btn-pd-tb) rem($btn-pd-lr);
             border: $lightorange 1px solid;
           }
         }
@@ -97,8 +97,8 @@
     #about {
       display: flex;
       background-color: $superlightorange;
-      padding: 80px 30px;
-      margin-bottom: 30px;
+      padding: rem(calc($pd * 4)) rem($pd-3x);
+      margin-bottom: rem($pd-3x);
 
       img {
         width: 50%;
@@ -108,7 +108,7 @@
 
       .text-container {
         & > p {
-          padding: 5px 10px;
+          padding: rem($pd-quarter) rem($pd-half);
           font-size: 0.6rem;
           line-height: 1.5;
           font-weight: 200;
@@ -117,31 +117,31 @@
       }
 
       .headings {
-        padding: 10px;
+        padding: rem($pd-half);
       }
 
       a {
         display: block;
-        margin: 10px 0 0 10px;
+        margin: rem($pd-half) 0 0 rem($pd-half);
         width: fit-content;
         color: #000;
         font-weight: 500;
         font-size: 0.6rem;
         text-transform: uppercase;
-        padding: 10px 16px;
+        padding: rem($pd-quarter) rem($pd-half);
         border: $lightorange 1px solid;
       }
     }
 
     #news {
       .top {
-        padding: 10px;
+        padding: rem($pd-quarter);
       }
 
       .carousel {
-        padding: 10px;
+        padding: rem($pd-quarter);
         display: flex;
-        gap: 10px;
+        gap: rem($pd-quarter);
         overflow-x: scroll;
 
         article {
@@ -176,7 +176,7 @@
             font-weight: 400;
             font-size: 0.6rem;
             text-transform: uppercase;
-            padding: 6px 16px;
+            padding: rem($pd-quarter) rem($pd-half);
             border: $lightorange 1px solid;
           }
         }
