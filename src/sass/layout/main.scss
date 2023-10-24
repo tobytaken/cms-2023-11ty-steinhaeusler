@@ -15,12 +15,14 @@
         padding: 10px;
       }
 
-      & > p {
-        padding: 5px 10px;
-        font-size: 0.6rem;
-        line-height: 1.5;
-        font-weight: 200;
-        color: $bggray;
+      .text-container {
+        & > p {
+          padding: 5px 10px;
+          font-size: 0.6rem;
+          line-height: 1.5;
+          font-weight: 200;
+          color: $bggray;
+        }
       }
 
       a {
