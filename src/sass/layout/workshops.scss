@@ -137,7 +137,7 @@
 
     .level {
       position: relative;
-      width: 70%;
+      width: 75%;
       margin: rem($pd) rem($pd) 0 rem($pd);
       display: flex;
       flex-direction: row;
@@ -163,7 +163,7 @@
         align-self: flex-end;
 
         .number {
-          bottom: 55px;
+          align-self: flex-start;
         }
       }
 
@@ -171,7 +171,7 @@
         align-self: flex-start;
 
         .number {
-          top: 42px;
+          align-self: flex-end;
         }
       }
 
@@ -183,10 +183,8 @@
 
       .number {
         position: relative;
-        left: 18px;
-        font-size: 220px;
-        font-weight: 500;
-        color: $bggray;
+        right: -5px;
+        width: 90px;
       }
 
       .text-container {
