@@ -1,3 +1,5 @@
+@import "animations";
+
 @include breakpoint(0, $mobile) {
   header {
     background-position: center;
@@ -23,6 +25,14 @@
     align-items: flex-end;
     background-color: $bggray;
     z-index: 2;
+
+    &.slide-in {
+      animation: slideIn 0.3s ease-in-out forwards;
+    }
+
+    &.slide-out {
+      animation: slideOut 0.3s ease-in-out forwards;
+    }
 
     &.hidden {
       #navlist {
@@ -135,6 +145,10 @@
       padding: rem($pd-quarter) rem($pd-half);
       margin-top: rem($pd-quarter);
       border: $orange 1px solid;
+
+      &:hover {
+        background-color: $orange;
+      }
     }
   }
 }
@@ -156,11 +170,12 @@ header {
   h1 {
     font-family: $font-family;
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 200;
     color: #fff;
 
     span {
-      font-weight: 200;
+      font-weight: 500;
+      text-transform: uppercase;
     }
   }
 }

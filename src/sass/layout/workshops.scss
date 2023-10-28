@@ -219,6 +219,10 @@
           text-transform: uppercase;
           padding: rem($pd-quarter) rem($pd-half);
           border: $orange 1px solid;
+
+          &:hover {
+            background-color: $orange;
+          }
         }
 
         .quote {
