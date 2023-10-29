@@ -3,7 +3,7 @@
 @include breakpoint(0, $mobile) {
   header {
     background-position: center;
-    background-image: url("../src/images/header-bg.jpg");
+    background-image: url("./images/header-bg.jpg");
 
     h2 {
       font-family: $font-family;
@@ -40,7 +40,7 @@
       }
 
       button {
-        background-image: url("../src/images/hamburger.svg");
+        background-image: url("./images/hamburger.svg");
       }
       background-color: transparent;
     }
@@ -65,7 +65,7 @@
       height: rem(calc($pd-3x/2));
       width: rem(calc($pd-3x/2));
       background-color: transparent;
-      background-image: url("../src/images/x.svg");
+      background-image: url("./images/x.svg");
       border: none;
       cursor: pointer;
     }
