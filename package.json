@@ -5,10 +5,10 @@
     "esbuild": "esbuild --watch ./src/js/main.js --bundle --outfile=./dist/main.js  --minify",
     "copy": "cp ./src/index.html ./dist/index.html"
   },
-  "dependencies": {},
   "devDependencies": {
-    "sass": "^1.69.2",
+    "@11ty/eleventy": "^2.0.1",
     "browser-sync": "^2.29.3",
-    "esbuild": "^0.19.4"
+    "esbuild": "^0.19.4",
+    "sass": "^1.69.2"
   }
 }
