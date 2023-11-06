@@ -2,7 +2,7 @@
 node_modules/
 
 # Compiled CSS
-*.css
+# *.css
 
 # Sass cache
 .sass-cache/
